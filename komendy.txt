@@ -1,17 +1,8 @@
-// html-validate installation //
-npm install --save-dev html-validate
+// Npm all devDependencies installation command //
+npm install --save-dev
 
-// 
-{
-  "extends": [
-    "html-validate:recommended"
-  ],
+// Html-validate all .html command //
+"validate": "npm exec html-validate index.html",
 
-  "rules": {
-    "close-order": "error",
-    "void": ["warn", {"style": "omit"}]
-  }
-}
-
-// html-validate running //
-npm exec html-validate index.html
+// browser-sync start for all .css and .html command //
+"start": "browser-sync start --server --files \"css/*.css\" \"*.html\" "
