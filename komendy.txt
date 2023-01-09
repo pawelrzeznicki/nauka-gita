@@ -1,2 +1,17 @@
+// html-validate installation //
 npm install --save-dev html-validate
 
+// 
+{
+  "extends": [
+    "html-validate:recommended"
+  ],
+
+  "rules": {
+    "close-order": "error",
+    "void": ["warn", {"style": "omit"}]
+  }
+}
+
+// html-validate running //
+npm exec html-validate index.html
