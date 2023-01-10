@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "validate": "npm exec html-validate index.html",
+    "validate": "npm exec html-validate *.html",
     "start": "browser-sync start --server --files \"css/*.css\" \"*.html\" "
   },
   "repository": {

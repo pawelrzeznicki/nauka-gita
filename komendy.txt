@@ -2,7 +2,7 @@
 npm install --save-dev
 
 // Html-validate all .html command //
-"validate": "npm exec html-validate index.html",
+"validate": "npm exec html-validate *.html",
 
 // browser-sync start for all .css and .html command //
 "start": "browser-sync start --server --files \"css/*.css\" \"*.html\" "
